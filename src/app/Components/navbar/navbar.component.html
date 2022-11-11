@@ -1,1 +1,51 @@
-<p>navbar works!</p>
+<nav>
+  <div class="page-title">
+    <div class="logo">
+      <img
+        src="../../../assets/code-slash-outline.svg"
+        alt="Angular Blog Icon"
+      />
+    </div>
+    <span class="name">Angular Blog</span>
+  </div>
+
+  <ul class="options" *ngIf="isMobile === false">
+    <li class="option">Home</li>
+    <li class="option">
+      Products
+      <div class="arrow-icon">
+        <img
+          src="../../../assets/chevron-down-outline.svg"
+          alt="Angular Blog Icon"
+        />
+      </div>
+      <ul class="dropdown">
+        <li class="option">Product 1</li>
+        <li class="option">Product 2</li>
+        <li class="option">Product 3</li>
+      </ul>
+    </li>
+    <li class="option">
+      Blog
+      <div class="arrow-icon">
+        <img
+          src="../../../assets/chevron-down-outline.svg"
+          alt="Angular Blog Icon"
+        />
+      </div>
+      <ul class="dropdown">
+        <li class="option">Blog 1</li>
+        <li class="option">Blog 2</li>
+        <li class="option">Blog 3</li>
+      </ul>
+    </li>
+    <li class="option">Pricing</li>
+    <li class="option">About Us</li>
+  </ul>
+
+  <div class="auth-buttons" *ngIf="isMobile === false">
+    <button class="log-in">Log In</button>
+    <button class="sign-up">Sign up</button>
+  </div>
+  <div *ngIf="isMobile === true">Some mobile element!</div>
+</nav>
