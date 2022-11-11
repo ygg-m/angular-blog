@@ -47,5 +47,57 @@
     <button class="log-in">Log In</button>
     <button class="sign-up">Sign up</button>
   </div>
-  <div *ngIf="isMobile === true">Some mobile element!</div>
+
+  <div *ngIf="isMobile === true" class="menu-icon" (click)="mobileMenuClick()">
+    <img src="../../../assets/menu-outline.svg" alt="" />
+  </div>
+</nav>
+
+<!-- mobile menu -->
+<nav
+  class="mobile"
+  *ngIf="isMobile === true"
+  [ngClass]="mobileMenu ? 'show' : 'hide'"
+>
+  <ul class="options">
+    <div class="close-button" (click)="mobileMenuClick()">
+      <img src="../../../assets/close-outline.svg" alt="Close Button" />
+    </div>
+    <li class="option">Home</li>
+    <li class="option">
+      Products
+      <div class="arrow-icon">
+        <img
+          src="../../../assets/chevron-down-outline.svg"
+          alt="Angular Blog Icon"
+        />
+      </div>
+      <ul class="dropdown">
+        <li class="option">Product 1</li>
+        <li class="option">Product 2</li>
+        <li class="option">Product 3</li>
+      </ul>
+    </li>
+    <li class="option">
+      Blog
+      <div class="arrow-icon">
+        <img
+          src="../../../assets/chevron-down-outline.svg"
+          alt="Angular Blog Icon"
+        />
+      </div>
+      <ul class="dropdown">
+        <li class="option">Blog 1</li>
+        <li class="option">Blog 2</li>
+        <li class="option">Blog 3</li>
+      </ul>
+    </li>
+    <li class="option">Pricing</li>
+    <li class="option">About Us</li>
+  </ul>
+
+  <div class="auth-buttons">
+    <button class="log-in">Log In</button>
+    <button class="sign-up">Sign up</button>
+  </div>
 </nav>

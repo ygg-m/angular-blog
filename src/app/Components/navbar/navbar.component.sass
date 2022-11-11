@@ -62,3 +62,65 @@ nav
     .sign-up
       color: #fff
       background: #000
+
+  .menu-icon
+    z-index: 20
+    cursor: pointer
+    img
+      object-fit: cover
+      width: 1.8rem
+      height: 1.8rem
+
+  &.mobile
+    z-index: 200
+
+    flex-direction: column
+    padding: 1rem 1rem 2rem
+    position: absolute
+    right: 0
+    top: 0
+
+    background-color: #fff
+    box-shadow: -5px 15px 25px -4px rgba(150, 150, 150, 0.24)
+
+    height: 100vh
+    width: 80vw
+
+    transition: 500ms
+
+    &.show
+      right: 0
+
+    &.hide
+      right: -90vw
+
+    .close-button
+      padding: 0 1rem
+      width: 100%
+      display: flex
+      justify-content: flex-end
+      margin-bottom: 2rem
+      img
+        cursor: pointer
+        object-fit: cover
+        width: 1.8rem
+        height: 1.8rem
+
+    .options
+      flex-direction: column
+      width: 100%
+      gap: 0
+
+      .option
+        padding: 1rem 0
+        font-size: 1.3rem
+        width: 100%
+        border-bottom: solid 1px #ccc
+
+    .auth-buttons
+      flex-direction: column
+      width: 100%
+
+      button
+        padding: 1rem
+        width: 100%
