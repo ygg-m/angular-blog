@@ -14,5 +14,12 @@ button
   border: none
 
 .cards-container
+  margin: auto
+  width: 100%
+  max-width: 1440px
+  padding: 1rem
   display: grid
-  grid-template-columns: repeat(auto-fit, minmax(336px, 1fr))
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr))
+  gap: 1rem
+  @media (max-width: 372px)
+    grid-template-columns: 1fr
