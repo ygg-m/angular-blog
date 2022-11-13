@@ -1,7 +1,23 @@
 <app-navbar></app-navbar>
 <app-page-title></app-page-title>
 <app-categories></app-categories>
-<app-featured-post></app-featured-post>
+
+<!-- featured post -->
+<app-featured-post
+  [img_src]="
+    'https://images.pexels.com/photos/5690988/pexels-photo-5690988.jpeg'
+  "
+  [img_alt]="'Woman looking the horizon.'"
+  [author]="'Ygor Goulart'"
+  [date]="'22 Jun 2022'"
+  title="A developer's guide to battling imposter syndrome"
+  description="
+    How to boost self-perception through communication writing and kinship.
+  "
+  [tags]="['Development', 'Career', 'Studios']"
+></app-featured-post>
+
+<!-- other posts -->
 <div class="cards-container">
   <app-card-post></app-card-post>
   <app-card-post></app-card-post>
