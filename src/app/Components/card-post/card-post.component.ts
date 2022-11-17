@@ -15,6 +15,7 @@ export class CardPostComponent implements OnInit {
   @Input() title: string = 'No title';
   @Input() description: string = 'No description';
   @Input() tags: string[] = [];
+  @Input() id: string = '0';
 
   ngOnInit(): void {}
 }
