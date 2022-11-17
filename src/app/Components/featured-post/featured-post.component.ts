@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { posts } from 'src/app/Data/Posts';
 
 @Component({
   selector: 'app-featured-post',
@@ -6,8 +7,6 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./featured-post.component.sass'],
 })
 export class FeaturedPostComponent implements OnInit {
-  constructor() {}
-
   @Input() img_src: string = '../../../assets/placeholder_post-img.png';
   @Input() img_alt: string = 'Post Image without description.';
   @Input() author: string = 'Anonymous';
@@ -16,7 +15,23 @@ export class FeaturedPostComponent implements OnInit {
   @Input() description: string = 'No description';
   @Input() tags: string[] = [];
   @Input() post: boolean = false;
-  @Input() id: number = 0;
+  @Input() id: string | number | null = 0;
 
-  ngOnInit(): void {}
+  constructor() {}
+
+  ngOnInit(): void {
+    this.setParamsToComponent(this.id);
+  }
+
+  setParamsToComponent(id: string | number | null) {
+    const result = posts.filter((article) => article.id === id)[0];
+
+    this.img_src = result.img_src;
+    this.img_alt = result.img_alt;
+    this.author = result.author;
+    this.date = result.date;
+    this.title = result.title;
+    this.description = result.description;
+    this.tags = result.tags;
+  }
 }
