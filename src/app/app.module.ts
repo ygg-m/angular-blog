@@ -11,6 +11,8 @@ import { NavbarComponent } from './Components/navbar/navbar.component';
 import { NavigationComponent } from './Components/navigation/navigation.component';
 import { PageTitleComponent } from './Components/page-title/page-title.component';
 import { SubscribeComponent } from './Components/subscribe/subscribe.component';
+import { PostComponent } from './Pages/post/post.component';
+import { HomeComponent } from './Pages/home/home.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { SubscribeComponent } from './Components/subscribe/subscribe.component';
     NavigationComponent,
     SubscribeComponent,
     FooterComponent,
+    PostComponent,
+    HomeComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
