@@ -16,7 +16,7 @@ export class FeaturedPostComponent implements OnInit {
   @Input() description: string = 'No description';
   @Input() tags: string[] = [];
   @Input() post: boolean = false;
-  @Input() id: string = '0';
+  @Input() id: number = 0;
 
   ngOnInit(): void {}
 }

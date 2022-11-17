@@ -1,6 +1,6 @@
 export const posts = [
   {
-    id: '1',
+    id: 1,
     image: '',
     title: '',
     description: '',
@@ -13,7 +13,7 @@ export const posts = [
     ],
   },
   {
-    id: '2',
+    id: 2,
     image: '',
     title: '',
     description: '',
