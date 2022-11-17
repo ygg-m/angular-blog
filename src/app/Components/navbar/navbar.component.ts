@@ -12,7 +12,7 @@ export class NavbarComponent implements OnInit {
   getIsMobile(): boolean {
     const w = document.documentElement.clientWidth;
     const breakpoint = 860;
-    console.log(w);
+    // console.log(w);
     if (w < breakpoint) {
       return true;
     } else {
