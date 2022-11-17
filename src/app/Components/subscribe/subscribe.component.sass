@@ -3,17 +3,35 @@
   margin: 5rem auto
   display: flex
   justify-content: space-between
-  flex-wrap: wrap
   gap: 1rem
 
-  h3
-    font-size: 1.5rem
-    margin-bottom: 1rem
+  @media (max-width: 880px)
+    justify-content: center
+    flex-wrap: wrap
+
+
+
+  .text
+    flex-basis: 50%
+    @media (max-width: 880px)
+      text-align: center
+      flex-basis: 100%
+
+    h3
+      font-size: 1.5rem
+      margin-bottom: 1rem
 
   form
+    flex-basis: 50%
+    display: flex
+    justify-content: space-between
     height: fit-content
     background-color: #eee
     border-radius: 99rem
+
+    @media (max-width: 880px)
+      flex-basis: 100%
+
 
     input
       background-color: transparent
@@ -24,6 +42,7 @@
 
     .email
       padding: 1rem 2rem
+      width: 100%
 
     .submit
       cursor: pointer
