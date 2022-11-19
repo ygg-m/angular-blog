@@ -31,4 +31,11 @@ export class NavbarComponent implements OnInit {
       this.isMobile = this.getIsMobile();
     };
   }
+
+  login() {
+    alert("Can't login or register yet. :(");
+  }
+  register() {
+    alert("Can't login or register yet. :(");
+  }
 }
