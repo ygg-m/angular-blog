@@ -1,16 +1,8 @@
+<!DOCTYPE html>
 <app-navbar></app-navbar>
 
-<app-featured-post
-  [post]="true"
-  img_src="{{ img_src }}"
-  img_alt="{{ img_alt }}"
-  author="{{ author }}"
-  date="{{ date }}"
-  title="{{ title }}"
-  description="{{ description }}"
-  [tags]="tags"
-></app-featured-post>
+<app-featured-post [post]="true"></app-featured-post>
 
-<div class="post-body" [innerHTML]="content"></div>
+<div class="post-body" innerHTML="{{ content }}"></div>
 
 <app-footer></app-footer>
