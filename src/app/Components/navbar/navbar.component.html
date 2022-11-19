@@ -7,37 +7,12 @@
   </div>
 
   <ul class="options" *ngIf="isMobile === false">
-    <li class="option">Home</li>
+    <li class="option" [routerLink]="''">Home</li>
+    <li class="option"><a href="https://github.com/ygg-m">GitHub</a></li>
     <li class="option">
-      Products
-      <div class="arrow-icon">
-        <img
-          src="../../../assets/chevron-down-outline.svg"
-          alt="Angular Blog Icon"
-        />
-      </div>
-      <ul class="dropdown">
-        <li class="option">Product 1</li>
-        <li class="option">Product 2</li>
-        <li class="option">Product 3</li>
-      </ul>
+      <a href="https://www.linkedin.com/in/ygorgm/">Linkedin</a>
     </li>
-    <li class="option">
-      Blog
-      <div class="arrow-icon">
-        <img
-          src="../../../assets/chevron-down-outline.svg"
-          alt="Angular Blog Icon"
-        />
-      </div>
-      <ul class="dropdown">
-        <li class="option">Blog 1</li>
-        <li class="option">Blog 2</li>
-        <li class="option">Blog 3</li>
-      </ul>
-    </li>
-    <li class="option">Pricing</li>
-    <li class="option">About Us</li>
+    <li class="option"><a href="https://twitter.com/yggm_">Twitter</a></li>
   </ul>
 
   <div class="auth-buttons" *ngIf="isMobile === false">
@@ -60,37 +35,12 @@
     <div class="close-button" (click)="mobileMenuClick()">
       <img src="../../../assets/close-outline.svg" alt="Close Button" />
     </div>
-    <li class="option">Home</li>
+    <li class="option" [routerLink]="''">Home</li>
+    <li class="option"><a href="https://github.com/ygg-m">GitHub</a></li>
     <li class="option">
-      Products
-      <div class="arrow-icon">
-        <img
-          src="../../../assets/chevron-down-outline.svg"
-          alt="Angular Blog Icon"
-        />
-      </div>
-      <ul class="dropdown">
-        <li class="option">Product 1</li>
-        <li class="option">Product 2</li>
-        <li class="option">Product 3</li>
-      </ul>
+      <a href="https://www.linkedin.com/in/ygorgm/">Linkedin</a>
     </li>
-    <li class="option">
-      Blog
-      <div class="arrow-icon">
-        <img
-          src="../../../assets/chevron-down-outline.svg"
-          alt="Angular Blog Icon"
-        />
-      </div>
-      <ul class="dropdown">
-        <li class="option">Blog 1</li>
-        <li class="option">Blog 2</li>
-        <li class="option">Blog 3</li>
-      </ul>
-    </li>
-    <li class="option">Pricing</li>
-    <li class="option">About Us</li>
+    <li class="option"><a href="https://twitter.com/yggm_">Twitter</a></li>
   </ul>
 
   <div class="auth-buttons">
