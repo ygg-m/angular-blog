@@ -39,13 +39,17 @@
 
     li
       font-size: 1rem
-      cursor: pointer
+      transition: 500ms
+      
+      a
+        border-bottom: 2px solid transparent
+        margin-bottom: -2px
 
-      &:hover
-        text-decoration: underline
-        .new
-          &::after
-            text-decoration: none
+        &:hover
+          transition: 200ms
+          border-bottom: 2px solid #000
+          margin-bottom: -2px
+
     .new
       &::after
         content: 'New'
@@ -72,15 +76,18 @@
 
   .social-icons
     display: flex
-    gap: .5rem
+    gap: 1rem
 
     .icon
       cursor: pointer
-      width: 2rem
-      height: 2rem
+      width: 2.5rem
+      height: 2.5rem
       outline: solid 1px #eee
       padding:  .5rem
       border-radius: .3rem
+      transition: 500ms
 
       &:hover
-        outline: solid 1px #000
+        transition: 200ms
+        outline: solid 2px #000
+        
